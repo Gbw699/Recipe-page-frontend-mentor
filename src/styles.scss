@@ -24,7 +24,10 @@ $Rose800: hsl(332, 51%, 32%);
 $Rose50: hsl(330, 100%, 98%);
 
 html,
-body {
+body,
+app-root {
+  display: block;
+  width: 100%;
   height: 100%;
   margin: 0;
   font-family: "Outfit";
