@@ -1,0 +1,107 @@
+@use "../styles.scss" as s;
+
+.img-container {
+  width: 100%;
+  height: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+main {
+  padding: 30px;
+  section {
+    .page-title {
+      margin: 0;
+      font-size: 35px;
+      color: s.$Stone900;
+    }
+    .section-p {
+      line-height: 24px;
+    }
+    article {
+      background-color: s.$Rose50;
+      border-radius: 10px;
+      padding: 22px 26px;
+      .article-title {
+        margin: 0;
+        color: s.$Rose800;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .article-ul {
+        padding-left: 22px;
+        margin-bottom: 0;
+        .article-li {
+          padding-left: 14px;
+          margin-bottom: 14px;
+          &::marker {
+            color: s.$Rose800;
+            font-size: 12px;
+          }
+          .li-title {
+            color: s.$Stone900;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .section-title {
+      color: s.$Brown800;
+      font-family: "Young Serif", serif;
+      font-weight: 400;
+    }
+    .section-ul {
+      padding-left: 22px;
+      margin-bottom: 30px;
+      .section-li {
+        padding-left: 14px;
+        margin-bottom: 14px;
+        &::marker {
+          font-size: 12px;
+        }
+      }
+    }
+    .section-ol {
+      padding-left: 22px;
+      margin-bottom: 30px;
+      .section-li {
+        padding-left: 14px;
+        margin-bottom: 14px;
+        &::marker {
+          color: s.$Brown800;
+          font-weight: 700;
+        }
+        .li-title {
+          color: s.$Stone900;
+          font-weight: 700;
+        }
+      }
+    }
+    .section-table {
+      width: 100%;
+      border-spacing: 0;
+      .table-row {
+        td {
+            padding: 0;
+        }
+        .table-data-property{
+            width: 50%;
+            padding-left: 30px;
+        }
+        .table-data-value {
+          color: s.$Brown800;
+          font-weight: 700;
+        }
+      }
+      .line {
+        border-bottom: 1px solid black;
+        margin: 8px 0;
+      }
+    }
+  }
+  hr {
+    border-color: rgba($color: s.$Stone100, $alpha: 0.3);
+  }
+}
